@@ -8,9 +8,13 @@
  */
 
 // ここでcatオブジェクトを作る
-
+let cat = {
+    name: "ああああ",
+    age: 18,
+    sex: "male"
+};
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
-
+console.log(cat);
 
 /**
  * 課題2: 課題1で作ったcatオブジェクトに次の情報を追加する
@@ -19,9 +23,9 @@
  */
 
 // ここでownerを追加するコードを書く
-
+cat.owner = "ふふふふ";
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
-
+console.log(cat);
 
 /**
  * 課題3: 課題1で作ったcatオブジェクトの次の情報を更新する
@@ -30,9 +34,9 @@
  */
 
 // ここでageを更新するコードを書く
-
+cat.age = cat.age - 1;
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
-
+console.log(cat);
 
 /**
  * 課題4: 課題1で作ったcatオブジェクトから次の情報を削除する
@@ -41,5 +45,6 @@
  */
 
 // ここでownerを削除するコードを書く
-
+delete cat.owner;
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
+console.log(cat);
